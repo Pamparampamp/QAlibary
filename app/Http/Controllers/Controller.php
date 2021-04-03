@@ -11,11 +11,4 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
-public function store(){
-Book::create([
-'isbn' => request('isbn'),
-'title' => request('title')
-]);
-
-}
 }
